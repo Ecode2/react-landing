@@ -1,10 +1,11 @@
-import Button from "./button"
+import Button from "./button";
+import illustration from "/illustration-intro.svg";
 
 export default function Main() {
 
     return (
         <>
-            <div className="grid grid-rows-1 grid-cols-2">
+            <div className="pt-7 px-[4%] grid grid-rows-2 grid-cols-1 md:grid-rows-1 md:grid-cols-2">
                  <Landing/>
             </div>
             <div className="grid grid-rows-1 grid-cols-2">
@@ -21,19 +22,17 @@ const Landing = () => {
 
     return(
         <>
-            <div>
-                <h1>
-                    Bring everyone together to build better products.
-
-                    Manage makes it simple for software teams to plan day-to-day 
-                    tasks while keeping the larger team goals in view.
-                </h1>
+            <div className="order-last text-center md:order-first">
+                <div>
+                    <p className="font-bold md:text-[2.1rem] lg:text-[2.8rem] md:text-left md:w-[80%] my-0 leading-[1.15] text-[2.4rem]">Bring everyone together to build better products.</p>
+                    <br/>
+                    <p className="text-left my-0 md:text-[0.975rem] md:w-[70%]">Manage makes it simple for software teams to plan day-to-day 
+                    tasks while keeping the larger team goals in view.</p>
+                </div>
 
                 <Button classes={""} text="Get Started" />
             </div>
-            <div>
-
-            </div>
+            <img src={illustration} className="md:order-last order-first w-[100%] h-auto" alt="Illustration Image" />
         </>
     )
 }

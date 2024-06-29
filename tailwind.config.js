@@ -14,6 +14,9 @@ export default {
         "very-Pale-Red": "#ffefeb",
         "very-light-gray": "hsl(0, 0%, 98%)",
       },
+      textSize: {
+        '4.5xl': '2.5rem',
+      },
     },
   },
   plugins: [],
