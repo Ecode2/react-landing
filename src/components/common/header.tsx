@@ -26,11 +26,12 @@ function NavBar() {
     }
 
     return (
-        <header className="flex flex-row justify-between items-center px-[4%] md:px-0 md:justify-around py-6">
+        <header className="flex flex-row justify-between items-center px-[4%] py-6">
             {/* Add logo here */}
             <img src={appLogo} alt="App logo" />
-            <div onClick={handleMenuClick} className={click ? "block absolute top-0 left-0 w-full h-full bg-very-dark-blue bg-opacity-45 md:hidden": "hidden"}/>
-            <nav className={`absolute font-bold md:relative md:flex  ${click ? "flex z-20 bg-white gap-y-8 justify-center rounded-md left-[7%] w-[86%] h-2/5 top-[10%]" : "hidden"} flex-col items-center md:flex-row md:gap-x-4 flex-wrap`}>
+
+            <div onClick={handleMenuClick} className={click ? " absolute top-0 left-0 w-full h-full bg-very-dark-blue bg-opacity-45 md:hidden": "hidden"}/>
+            <nav className={`absolute font-bold md:relative md:flex  ${click ? "flex z-20 bg-white gap-y-8 justify-center rounded-md left-[7%] w-[86%] h-2/5 top-[10%]" : "hidden"} flex-col items-center md:flex-row md:gap-x-3 lg:gap-x-4 flex-wrap`}>
                 {/* Make Navbar responsive */}
                 <span>Pricing</span>
                 <span>Product</span>
@@ -40,7 +41,7 @@ function NavBar() {
             </nav>
 
             {/* Add Get started button */}
-            <Button classes={"hidden md:block"} text="Get Started" />
+            <Button classes={"hidden md:block md:mr-[1.7%]"} text="Get Started" />
 
             {click ? <img src={closeIcon} onClick={handleMenuClick} className="md:hidden z-20" alt="App logo" /> : <img src={hamBurger} onClick={handleMenuClick} className="md:hidden" alt="App logo" />}
         </header>
