@@ -1,10 +1,12 @@
 import Button from "../button";
+import LgBgSimplify from "/bg-simplify-section-desktop.svg";
+import SmBgSimplify from "/bg-simplify-section-mobile.svg";
 
 function Footer() {
 
     return (
-        <>
-            <div className="grid grid-rows-1 grid-cols-2">
+        <div className="pt-[12%]">
+            <div className="grid grid-rows-1 grid-cols-2 w-full bg-bright-red px-[4%]">
                 <p>Simplify how your team works today.</p>
                 <Button classes={""} text="Get Started" />
             </div>
@@ -39,7 +41,7 @@ function Footer() {
                     Coded by <a href="#">Your Name Here</a>.
                 </div>
             </footer>
-        </>
+        </div>
     )
 
 }

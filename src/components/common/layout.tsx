@@ -1,7 +1,7 @@
 import type { ReactNode } from "react";
 import NavBar from "./header";
 import Footer from "./footer";
-import tabletIcon from "/bg-tablet-pattern.svg"
+import tabletIcon from "/bg-tablet-pattern.svg";
 
 const Layout = ({children}: {children: ReactNode} ) => {
 
